@@ -31,6 +31,6 @@ for i in range(N):
 
 fig, ax = plt.subplots()
 ax.plot(list(range(N)), trades)
-ax.set_xlabel('X-axis label')
-ax.set_ylabel('Y-axis label')
+ax.set_xlabel('Trade number (can be seen as time)')
+ax.set_ylabel('Portfolio ($)')
 st.pyplot(fig)
