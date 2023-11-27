@@ -13,11 +13,11 @@ st.write(
     "Assess the potential long-term profitability of your trading strategy."
 )
 
-money = st.number_input("Enter your initial amount of money", min_value=0, max_value=1000000, value=25)
-N = st.slider("Select the number of trades", min_value=0, max_value=1000, value=100)
-win_rate = st.slider("Select your percentage of wins (of taking profit)", min_value=0, max_value=100, value=50)
-risk = st.slider("Select the percentage of you account you're willing to risk at each trade", min_value=0, max_value=100, value=1)
-reward = st.slider("Select the percentage of profit at which you close your trades", min_value=0, max_value=100, value=3)
+money = st.number_input("Initial capital of investment", min_value=0, max_value=1000000, value=100)
+N = st.slider("Number of trades", min_value=0, max_value=500, value=100)
+win_rate = st.slider("Win rate (percentage of trades that hit take profit)", min_value=0, max_value=100, value=50)
+risk = st.slider("**Risk per trade** (percentage of your account that you are prepared to allocate for risk in each trade)", min_value=0, max_value=100, value=1)
+reward = st.slider("**Profit per trade** (targeted percentage of your account that you aim to achieve as profit)", min_value=0, max_value=100, value=3)
 
 trades = []
 for i in range(N):
