@@ -4,7 +4,7 @@ from random import random
 import streamlit as st
 
 # Title
-st.title("TradeCraft Simulator")
+st.title("Optimizing Trading Strategies: Evaluate Profitability, Risk, and Rewards")
 
 # Introductory Text
 st.write(
