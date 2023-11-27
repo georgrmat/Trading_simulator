@@ -23,10 +23,8 @@ trades = []
 for i in range(N):
     if random() < win_rate/100:
         money *= 1 + reward/100
-        print(i, "  ", "Take Profit", "  ", np.round(money, 2))
     else:
         money *= 1 - risk/100
-        print(i, "  ", "Stop Loss", "  ", np.round(money, 2))
     trades.append(money)
 
 fig, ax = plt.subplots()
