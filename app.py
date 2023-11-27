@@ -3,6 +3,16 @@ import matplotlib.pyplot as plt
 from random import random
 import streamlit as st
 
+# Title
+st.title("TradeCraft Simulator")
+
+# Introductory Text
+st.write(
+    "Welcome to this trading simulator !\n\n"
+    "Explore different trading scenarios by adjusting the number of trades, win rate, risk, and reward.\n"
+    "Assess the potential long-term profitability of your trading strategy."
+)
+
 money = st.number_input("Enter your initial amount of money", min_value=0, max_value=1000000, value=25)
 N = st.slider("Select the number of trades", min_value=0, max_value=1000, value=100)
 win_rate = st.slider("Select your percentage of wins (of taking profit)", min_value=0, max_value=100, value=50)
